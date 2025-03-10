@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+    font-size: 20px;
+	scroll-behavior: smooth;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*Text Styles */
+
+p {
+	font-size: 0.9rem;
+}
+
+.bio h2 {
+	font-size: 1.4rem;
+}
+
+.bio p {
+	font-size: 0.8rem;
+}
+
+
+.bio img {
+	margin-bottom: 0.5rem;
+}
+/*Navbar Styles */
+nav.navbar {
+    padding: 20px; /*Creates space around the navbar*/
+    background-color: #82341e !important; /*sets the background colour for the navbar */
+}
+nav.navbar .navbar-nav {
+    padding-top: 5px;
+    padding-left: 20px;
+}
+nav.navbar .navbar-nav a.nav-link {
+    padding: 8px 20px; /*Sets the space around the link*/
+    color: #fff; /* Sets the link colour */
+    text-align: left;
+    font-size: 1rem; /*Sets the link size */
+}
+nav.navbar .navbar-nav a.nav-link:hover { /* Sets the style when hovering over the navbar links*/
+    color: #e9bd43;
+}
+nav.navbar .navbar-nav .active a.nav-link {
+    font-weight: bold;
+    color: #e9bd43;
+    background: transparent;
+    border-bottom: 4px solid #FFB800;
+}
+nav.navbar a.navbar-brand {
+    color: white;
+}
+/*Form Styles */
+form.form-inline {
+    width: 39%;
+}
+form.form-inline input[type=search] {
+    border-radius: 0;
+    width: 65%;
+    font-size: 0.85rem;
+    border: 1px solid #fff;
+    margin: 0;
+    background: transparent;
+    max-width: 250px;
+    padding: 15px;
+    color: #FFF;
+}
+form.form-inline input[type=search]::placeholder {
+    color: #fff;
+}
+form.form-inline button[type=submit] {
+    border: 1px solid #fff;
+    color: #fff;
+    width: 30%;
+    border-radius: 0;
+    padding: 8px 0 7px 0;
+    font-size: 0.85rem;
+    margin-left: -6px;
+    max-width: 100px
+}
+form.form-inline button.btn:hover {
+    background: transparent;
+    color: orange;
+}
+.top {
+    margin-top: 20px;
+}
+#carouselExampleIndicators1 img, video {
+    width: 100%;
+    height: auto;
+}
+section img, video {
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem 0;
+}
+
+/*Dropcap Styles */
+
+.firstcharacter {
+  float: left;
+  color: #82341e;
+  font-size: 4rem;
+  line-height: 3rem;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-left: 3px;
+}
+/*Footer Styles */
+footer {
+    width: 100%
+}
+footer h2 {}
+.footerL {
+    float: left;
+    padding: 0;
+    border-right: 1px solid #999;
+}
+.footerR {
+    float: right;
+    text-align: right;
+    padding: 0;
+}
+
+.footerR p.linked {
+  background: url("../images/linkedin.png") no-repeat right;
+  padding-right: 30px;
+}
+
+
+.card-body{
+	padding-top: 0.75rem;
+	font-size: 0.85rem;
+}
+
+.card-header a {
+	font-size: 1rem;
+}
+
+.mb-0 {
+	font-size: 0.85rem;
+}
+
+.card {
+	margin-bottom: 1px;
+}
+
+
+@media screen and (max-width: 992px) {
+    
+	nav.navbar .navbar-nav {
+		padding-left: 0;
+	}
+	
+	nav.navbar .navbar-nav a.nav-link {
+    padding: 8px 20px 8px 0;
+	width: 50%;
+	}
+	
+	p {
+	font-size: 0.85rem;
+}
+	
+	form.form-inline {
+        width: 100%;
+    }
+    form.form-inline input[type=search] {
+        width: 90%;
+    }
+    form.form-inline button[type=submit] {
+        display: none;
+        width: 0;
+    }
+    .footerL {
+        border-right: none;
+        border-bottom: 1px solid #999;
+        padding-left: 1rem;
+		
+    }
+    .footerR {
+        text-align: left;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+	
+	.footerR p.linked {
+  background: url("../images/linkedin.png") no-repeat 65px 0;
+  padding-right: 30px;
+}
+}
