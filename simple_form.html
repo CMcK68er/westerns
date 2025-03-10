@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Manchester United - Post Comment</title>
+	<meta name="description" content="Add a sentence that describes the purpose of this page.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        
+       /*Form Styles */
+       
+       body {
+     font-family: "Josefin Sans", sans-serif;
+     }
+     
+     
+     ::placeholder {
+     
+     font-family: "Josefin Sans", sans-serif;
+     font-size: 18px;
+     }
+ #frmComment {
+	  	width: 90%;
+		margin: 30px auto;
+		font-size: 18px;
+}
+#frmComment label{
+		float:	left;
+		width: 100%; 
+		display: block; 
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+}
+#frmComment label span { 
+		float: left;
+		width: 30%; 
+		text-align: right;
+		margin-top: 10px;
+        padding-top: 20px;
+      
+}
+#frmComment label:hover span{
+		color: #777;
+}
+#frmComment input { 
+		float: left;
+		width: 50%; 
+		border: 1px solid #999;
+		box-shadow: 0px 5px 5px #e3e3e3;
+		margin: 10px 0 0 20px;
+		padding: 20px 10px; 
+		height: 18px;
+}
+
+#frmComment input:hover,#frmComment textarea:hover{
+                box-shadow:5px 5px 8px #c1c1c1;
+                
+}
+#frmComment textarea{
+                float:left;
+                width:51%;
+                margin:8px 0 0 20px;
+                border:solid 1px #999;
+                box-shadow:2px 8px 8px #e3e3e3;
+                padding:10px 0 0 5px;
+                
+                
+}
+select{
+                 font-family: "Josefin Sans", sans-serif;
+                width:52%;
+                padding:12px 10px 10px 10px;
+                margin:18px 0 0 20px;
+                border:1px solid #999;
+                color:#999;
+                font-size: 16px;
+                
+}
+#frmComment input[type=submit]{
+                 padding:12px 2px;
+                 text-align:center;
+                 width:140px;
+                 float:left;
+                 color:#FFF;
+                 background:#0088CC;
+                 border:1px solid #0088CC;
+                 margin:0px 0 0 32%;
+                 border-radius:7px;
+                 cursor:pointer;
+                 height:45px;
+                 
+}
+#frmComment input[type=submit]:hover {
+                 background:#18B1FB;
+                 
+}  
+ 
+
+        
+    </style>
+</head>
+<body>
+
+<form action="" id="frmComment" name="frmComment" method="post">
+<h2>Post a Comment</h2>
+
+<label for="name">
+<span>First Name:</span> <input type="text" id="name" name="name" placeholder="Enter First Name">
+</label>
+
+<label for="surname">
+<span>Surname:</span> <input type="text" id="surname" name="surname" placeholder="Enter Surname"/>
+</label>
+
+
+<label for="date">
+<span>Date:</span> <input type="date" id="date" min="2024/12/31" max="2020/08/31" name="date" placeholder="Enter today's date"/>
+</label>
+
+<label for="email">
+<span>Email:</span> <input type="email" multiple id="email" name="email" placeholder="Enter your email address"/>
+</label>
+
+<label for="choose"><span>Topic:</span>
+<select id="choose">
+<option value="">--Please choose an option--</option>
+<option value="option1">Topic 1</option>
+<option value="option2">Topic 2</option>
+<option value="option3">Topic 3</option>
+<option value="option4">Topic 4</option>
+<option value="option5">Topic 5</option>
+</select>
+</label>
+    
+<label for="display">
+<span>Display:</span> <input type="text" id="display" name="display" placeholder="The name to display above your comment" />
+</label>
+
+<label for="upload"><span>Upload File:</span> <input type="file" multiple id="upload" accept="image/*" name="upload" placeholder="Upload your file" /></label>
+
+<label for="comment"><span>Comment:</span> <textarea rows="4" cols="50" id="comment" name="comment"> </textarea></label>
+		
+		  
+<input type="submit" value="Post Comment" name="submit" class="button" />
+			
+			
+</form>
+</body>
+</html>

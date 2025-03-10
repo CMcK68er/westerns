@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Table Template</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <style>
+     
+		html {
+			font-size: 20px;
+		}
+		
+		
+     body {
+     font-family: "Josefin Sans", sans-serif;
+     }
+        /* Table Styles */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width: 80%;
+margin: 50px auto;
+}
+            
+caption {
+font-size: 1.5rem;
+margin: 0.5rem 0;
+text-align: left;
+width: 100%;
+display: block;                
+}
+    
+th {
+font-size: 1rem;
+font-weight: bold;
+color: #000;
+padding: 10px 8px;
+border-bottom: 2px solid #000;
+text-align: center;
+background: #FFF;
+}
+
+
+td {
+font-size: 0.9em;
+border-bottom: 1px solid #FFF;
+color: #000;
+padding: 12px 6px;
+text-align: center;
+}
+
+
+table th:nth-of-type(1) {
+width: 35%; 
+}
+
+table th:nth-of-type(2) {
+width: 25%; 
+}
+
+ 
+table th:nth-of-type(3) {
+width: 15%; 
+}
+table th:nth-of-type(4) {
+width: 25%; 
+}
+
+
+table tr:nth-of-type(even) {
+background-color: rgb(193,224,131)
+}
+
+table tr:nth-of-type(even):hover {
+background-color: rgb(147,183,75);
+cursor: pointer;
+}
+    
+ table tr:nth-of-type(odd) {
+background-color: rgb(101,120,160);
+}
+
+ table tr:nth-of-type(odd):hover {
+background-color: rgb(62, 84, 131);
+cursor: pointer;
+}   
+    
+    
+    </style>
+</head>
+<body>
+
+
+<h3>Table Title </h3>
+<table> <!--Starts table -->
+	<thead> <!--Starts table head -->
+		<tr> <!--Starts table row -->
+			<th scope="col" class="name">Film</th> <!--First column heading --> 
+            		<th scope="col" class="date">Date</th> <!--Second column heading -->
+            		<th scope="col" class="time">Time</th> <!--Third column heading -->
+            		<th scope="col" class="venue">Venue</th> <!--Fourth column heading -->
+        	</tr> <!--Ends table row -->
+    	</thead> <!—Ends table head -->
+    
+	<tbody>
+    		
+		<tr> <!--Starts table row -->
+        		<td>Cat on a Hot Tin Roof</td> <!--First table cell-->
+            		<td>24th March 2012</td> <!--Second table cell-->
+            		<td>9:40pm</td> <!--Third table cell-->
+            		<td>Queen's Film Theatre</td> <!--Fourth table cell-->
+        	</tr> <!--Ends table row -->
+        
+		
+		<tr>
+        		<td>The Hustler</td>
+            		<td>26th March 2012</td>
+            		<td>8:40pm</td>
+            		<td>Queen's Film Theatre</td>
+        	</tr>
+        
+		
+		
+ 
+		<tr>
+        		<td>Cool Hand Luke</td>
+            		<td>27th March 2012</td>
+            		<td>9:40pm</td>
+            		<td>Queen's Film Theatre</td>
+        	</tr>
+        
+
+		<tr>
+        		<td>The Sting</td>
+            		<td>28th March 2012</td>
+            		<td>3:00pm</td>
+            		<td>Queen's Film Theatre</td>
+        	</tr>
+    
+	</tbody>
+</table> <!--Ends table -->
+
+
+</body>
+</html>
